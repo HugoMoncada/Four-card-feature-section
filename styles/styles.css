@@ -1,0 +1,178 @@
+:root{
+
+/* ### Primary */
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+/* ### Neutral */
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    background-color: var(--Very-Light-Gray);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+main{
+    max-width: 370px;
+}
+
+/* ==== HEADER STYLES ==== */
+header{
+    margin-bottom: 50px;
+}
+
+.header__title{
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+}
+
+.header__title-light{
+    color: var(--Grayish-Blue);
+    font-weight: 200;
+}
+
+.header__text{
+    color: var(--Grayish-Blue);
+    font-size: 14px;
+    text-align: center;
+}
+/* ==== */
+
+
+/* ==== CARD STYLES ==== */
+.card{
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    margin-bottom: 35px;
+    -webkit-box-shadow: 0px 8px 29px -9px rgba(140,140,140,1);
+    -moz-box-shadow: 0px 8px 29px -9px rgba(140,140,140,1);
+    box-shadow: 0px 8px 29px -9px rgba(140,140,140,1);
+
+}
+
+.card__title{
+    color: var(--Very-Dark-Blue);
+    font-size: 20px;
+    margin: 0;
+}
+
+.card__text{
+    color: var(--Grayish-Blue);
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 45px;
+}
+
+.supervisor{
+    border-top: 5px solid var(--Cyan);
+}
+
+.builder{
+    border-top: 5px solid var(--Red);
+}
+
+.karma{
+    border-top: 5px solid var(--Orange);
+}
+.calculator{
+    border-top: 5px solid var(--Blue);
+}
+
+.card__icon{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+/* ==== */
+
+
+/* ====== MEDIA QUERYS ====== */
+
+@media only screen and (min-width: 1400px) {
+    html, body{
+        height: 100vh;
+    }
+    
+    .container{
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    main{
+        max-width: 95%;
+    }
+
+
+    /* ==== HEADER STYLES ==== */
+    header{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    
+    .header__title{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+ 
+    
+    .header__text{
+        font-size: 15px;
+    }
+
+
+    /* ==== */
+
+
+    /* ==== CARDS STYLES ==== */
+
+    .cards{
+        display: flex;
+    }
+
+    .card{
+        max-width: 300px;
+        max-height: 220px;
+    }
+
+    .supervisor, .calculator{
+        align-self: center;
+    }
+
+    .cards__middle{
+        margin: 0 40px;
+    }
+
+    /* ==== */
+    
+}
